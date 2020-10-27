@@ -109,6 +109,7 @@ footer {
   .social-icons img {
     cursor: pointer;
     width: calc(2rem + 1vw);
+    height: calc(2rem + 1vw);
 
     &:hover {
       transform: scale(1.2);
@@ -153,6 +154,18 @@ footer {
   #slogan,
   #hakkımızda {
     min-height: 70vh;
+  }
+
+  /* Flicker Düzenleme */
+  #slogan {
+    .neon-text {
+      animation: none;
+      text-shadow: -0.2rem -0.2rem 1rem rgb(255, 3, 3), 0.2rem 0.2rem 1rem #fff,
+        0 0 1rem red, 0 0 2rem red;
+      box-shadow: 0 0 2rem #08f,
+        inset 0 0 2rem #08f,
+        0 0 4rem#08f;
+    }
   }
 
   /* Kahve Seçenekleri Sayfası Düzenleme */

@@ -452,6 +452,7 @@ footer .social-icons {
 footer .social-icons img {
   cursor: pointer;
   width: calc(2rem + 1vw);
+  height: calc(2rem + 1vw);
 }
 
 footer .social-icons img:hover {
@@ -503,6 +504,14 @@ footer .social-icons img:hover {
   #slogan,
   #hakkımızda {
     min-height: 70vh;
+  }
+  /* Flicker Düzenleme */
+  #slogan .neon-text {
+    -webkit-animation: none;
+            animation: none;
+    text-shadow: -0.2rem -0.2rem 1rem #ff0303, 0.2rem 0.2rem 1rem #fff, 0 0 1rem red, 0 0 2rem red;
+    -webkit-box-shadow: 0 0 2rem #08f, inset 0 0 2rem #08f, 0 0 4rem #08f;
+            box-shadow: 0 0 2rem #08f, inset 0 0 2rem #08f, 0 0 4rem #08f;
   }
   /* Kahve Seçenekleri Sayfası Düzenleme */
   .coffee2 {
