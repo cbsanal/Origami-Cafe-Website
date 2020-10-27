@@ -1,6 +1,6 @@
 # Origami-Cafe-Website
 
-*Proje HTML/CSS ve JavaScript kullanılarak yapılmıştır.
+*Proje HTML/SCSS ve JavaScript kullanılarak yapılmıştır.
 
 *Tasarım tamamen responsive' dir.
 
