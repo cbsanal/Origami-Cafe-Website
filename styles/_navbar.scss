@@ -1,0 +1,61 @@
+aside {
+  padding: 0 2vw;
+  padding-top: 2vh;
+  width: 20vw;
+  position: fixed;
+
+  #logo {
+    font-family: "Abril Fatface", cursive;
+    text-decoration: underline;
+    font-size: var(--header1);
+    font-weight: 400;
+    min-height: 10vh;
+    cursor: pointer;
+  }
+
+  nav {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 3em 0;
+
+        a {
+          font-size: var(--header2);
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .menu-wrapper {
+    @include flex(center, center, column);
+    display: none;
+
+    .menu-item-bento {
+      width: 30px;
+      height: 30px;
+      @include flex(center, center, row);
+      flex-wrap: wrap;
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+
+  .box {
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    margin: 3px 3px;
+    display: inline-block;
+    transition: all 0.3s linear;
+  }
+
+}

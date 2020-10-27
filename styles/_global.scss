@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    --neon-text-color: rgb(255, 0, 0);
+    --neon-border-color: #08f;
+    overflow-x: hidden;
+    --header1: calc(1rem + 1.25vw);
+    --header2: calc(0.5rem + 1vw);
+    --big-text: calc(0.5rem + 1vw);
+    --normal-text: calc(0.25rem + 1vw);
+    --mini-text: calc(0.25rem + 0.75vw);
+    --neonText: calc(2rem + 5vw);
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    border-bottom: 1px solid white;
+}
+
+
+section {
+    min-height: 100vh;
+    margin-left: 20vw;
+}
+
+.title {
+    font-size: var(--header1);
+    padding: 2em;
+    text-align: center;
+}

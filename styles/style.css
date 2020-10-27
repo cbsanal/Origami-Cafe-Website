@@ -1,7 +1,8 @@
 @charset "UTF-8";
+/* Global Değişkenler */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -35,12 +36,15 @@ a {
 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 span {
   border-bottom: 1px solid white;
+}
+
+section {
+  min-height: 100vh;
+  margin-left: 20vw;
 }
 
 .title {
@@ -49,16 +53,12 @@ span {
   text-align: center;
 }
 
-section {
-  margin-left: 20vw;
-}
-
+/* Navigation */
 aside {
   padding: 0 2vw;
   padding-top: 2vh;
   width: 20vw;
   position: fixed;
-  z-index: 1;
 }
 
 aside #logo {
@@ -96,9 +96,58 @@ aside nav ul li a:hover {
   text-decoration: underline;
 }
 
+aside .menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+aside .menu-wrapper .menu-item-bento {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
+  z-index: 1;
+}
+
+aside .box {
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  margin: 3px 3px;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+/* Slogan Sayfası Birinci Sayfa */
 #slogan {
-  min-height: 100vh;
-  background-image: url(../images/background-wall.jpg);
+  background-image: url(../images/background-wallM.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -110,7 +159,10 @@ aside nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Animate neon flicker */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #slogan .neon-text {
@@ -127,65 +179,9 @@ aside nav ul li a:hover {
           animation: flicker 1.5s infinite alternate;
 }
 
-@-webkit-keyframes flicker {
-  0%,
-  4%,
-  6%,
-  14%,
-  16%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
-    -webkit-box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
-            box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
-  }
-  5%,
-  15%,
-  20%,
-  24%,
-  55% {
-    text-shadow: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
-@keyframes flicker {
-  0%,
-  4%,
-  6%,
-  14%,
-  16%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
-    -webkit-box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
-            box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
-  }
-  5%,
-  15%,
-  20%,
-  24%,
-  55% {
-    text-shadow: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
+/* Hakkımızda Sayfası İkinci Sayfa */
 #hakkımızda {
-  min-height: 100vh;
-  background-image: url(../images/background-coffee.jpg);
+  background-image: url(../images/background-coffeeM.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: -webkit-box;
@@ -194,13 +190,13 @@ aside nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0 8vw;
 }
 
@@ -209,6 +205,7 @@ aside nav ul li a:hover {
   margin-bottom: 5vh;
 }
 
+/* Kahve Seçeneklerinin Gösterildiği Sayfa - Üçüncü Sayfa */
 #coffeeOptions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,18 +239,6 @@ aside nav ul li a:hover {
   margin-bottom: 5vh;
 }
 
-#coffeeOptions .allCoffees-flex .coffee .coffee-img-container {
-  width: 17vw;
-  height: 22vh;
-  min-width: 200px;
-  margin-bottom: .5vh;
-}
-
-#coffeeOptions .allCoffees-flex .coffee .coffee-img-container .coffee-img-container img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 #coffeeOptions .coffee-title {
   opacity: .5;
   font-size: var(--normal-text);
@@ -263,6 +248,12 @@ aside nav ul li a:hover {
   font-size: var(--mini-text);
   width: 17vw;
   min-width: 200px;
+}
+
+#coffeeOptions .coffee-img-container {
+  width: 17vw;
+  min-width: 200px;
+  margin-bottom: .5vh;
 }
 
 #coffeeOptions .allCoffees-grid {
@@ -322,16 +313,9 @@ aside nav ul li a:hover {
   min-width: 200px;
 }
 
-#coffeeOptions .allCoffees-grid .coffee-img-container img {
-  height: 22vh;
-  margin-bottom: .5vh;
-}
-
+/* Mağazaların Gösterildiği Sayfa - Dördüncü Sayfa */
 #shops {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 4vw;
+  min-height: auto;
 }
 
 #shops .shop-containers {
@@ -346,8 +330,8 @@ aside nav ul li a:hover {
 }
 
 #shops .shop-containers .shop-container {
-  width: 35vw;
-  min-width: 300px;
+  width: 33.5vw;
+  min-width: 275px;
   padding: 0 2vw;
 }
 
@@ -357,41 +341,37 @@ aside nav ul li a:hover {
   padding-bottom: 2em;
 }
 
+/* İletişim Sayfası - Beşinci Sayfa */
 #contact {
-  position: relative;
-  min-height: 100vh;
-}
-
-#contact label {
-  color: white;
-  font-size: var(--header2);
-}
-
-#contact input {
-  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #contact form {
   width: 85%;
-  max-width: 600px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  max-width: 800px;
   padding: 1em 1.5em;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
 }
 
-#contact .txtb {
+#contact .row {
   border: 1px solid gray;
   margin: 5vh 0;
   padding: 1em 1.5em;
   border-radius: 8px;
 }
 
-#contact .txtb label {
+#contact .row label {
   display: block;
   text-align: left;
   color: #333;
@@ -399,8 +379,9 @@ aside nav ul li a:hover {
   font-size: var(--normal-text);
 }
 
-#contact .txtb input,
-#contact .txtb textarea {
+#contact .row input,
+#contact .row textarea {
+  padding: 2px;
   width: 100%;
   border: none;
   background: none;
@@ -408,6 +389,7 @@ aside nav ul li a:hover {
   font-size: var(--normal-text);
   margin-top: 6px;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 #contact button {
@@ -420,14 +402,117 @@ aside nav ul li a:hover {
   cursor: pointer;
   margin-top: 8px;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
+/* Footer Kısmı - Sayfanın En Altı */
+footer {
+  min-height: 8vh;
+  margin-left: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 3em;
+  border-top: 1px solid white;
+  margin-top: 5vh;
+}
+
+footer .name {
+  font-size: var(--normal-text);
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  font-weight: 400;
+}
+
+footer .social-icons {
+  font-size: var(--header2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .social-icons img {
+  cursor: pointer;
+  width: calc(2rem + 1vw);
+}
+
+footer .social-icons img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/* Kullanılan Keyframeler */
+@-webkit-keyframes flicker {
+  0%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
+    -webkit-box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
+            box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
+  }
+  24%,
+  55% {
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@keyframes flicker {
+  0%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
+    -webkit-box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
+            box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
+  }
+  24%,
+  55% {
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+/* Responsive Tasarım Öğeleri */
 @media screen and (max-width: 967px) {
+  /* İlk ve İkinci Sayfa Yükseklik Düzenleme */
+  #slogan,
+  #hakkımızda {
+    min-height: 70vh;
+  }
+  /* Kahve Seçenekleri Sayfası Düzenleme */
   .coffee2 {
     display: none;
   }
   #coffeeOptions .allCoffees-grid {
     grid-column-gap: 0;
+  }
+  #coffeeOptions .coffee-description {
+    font-size: var(--normal-text);
   }
   #coffeeOptions .coffee4 {
     margin-left: 6vw;
@@ -435,11 +520,128 @@ aside nav ul li a:hover {
 }
 
 @media screen and (max-width: 590px) {
-  .navigation {
-    display: none;
-  }
+  /* Genel Düzenleme */
   body section {
     margin-left: 0;
+  }
+  .body-fixed {
+    overflow: hidden;
+  }
+  /*Navbar Düzenleme */
+  aside {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2vh 4vw;
+  }
+  aside #logo {
+    min-height: auto;
+    font-size: calc(var(--header1) + .25rem);
+  }
+  aside .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-links {
+    min-height: auto;
+    z-index: 1;
+    background: black;
+    width: 100vw;
+    height: 95vh;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  nav a {
+    font-size: calc(var(--header1) + .25rem) !important;
+  }
+  /* İlk ve İkinci Sayfa Düzenlemeleri */
+  #slogan,
+  #hakkımızda {
+    min-height: 55vh;
+  }
+  #slogan .neon-text {
+    left: 0;
+  }
+  /* Kahve Seçenekleri Sayfası Düzenleme */
+  #coffeeOptions .coffee-description,
+  #coffeeOptions .coffee-title {
+    font-size: var(--big-text);
+  }
+  /* Mağazalarımız Sayfası Düzenleme */
+  #shops .shop-address {
+    font-size: var(--big-text) !important;
+  }
+  /* İletişim Sayfası Düzenleme */
+  #contact {
+    min-height: auto;
+  }
+  #contact label,
+  #contact input,
+  #contact textarea {
+    font-size: var(--big-text) !important;
+  }
+  #contact label {
+    color: #7a7a7a !important;
+  }
+  /* Footer Sayfası Düzenleme */
+  footer {
+    margin-left: 0;
+  }
+  footer .name {
+    font-size: calc(var(--big-text) + .5rem);
+  }
+  footer .social-icons img {
+    width: calc(2.5rem + 1vw);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Kahve Seçenekleri Düzenleme */
+  #coffeeOptions .coffee2,
+  #coffeeOptions .coffee3,
+  #coffeeOptions .coffee4,
+  #coffeeOptions .coffee-description,
+  #coffeeOptions .coffee-img-container {
+    min-width: 150px !important;
+  }
+  #coffeeOptions .coffee1 {
+    min-width: calc(300px + 6vw) !important;
+  }
+  #coffeeOptions .coffee1 .coffee-description {
+    min-width: calc(300px + 6vw) !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

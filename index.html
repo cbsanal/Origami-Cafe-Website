@@ -5,37 +5,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Origami Cafe</title>
-    <link rel="icon" href="./icon/coffeeIcon.svg" />
+    <link rel="icon" href="./icons/coffeeIcon.svg" />
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Exo+2:ital,wght@1,200&family=Montserrat&display=swap"
         rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
     <aside class="navigation">
-        <h1 id="logo"><a href="#fPage">Origami Cafe</a></h1>
-        <nav>
+        <h1 id="logo"><a href="#slogan">Origami Cafe</a></h1>
+        <nav class="nav-links">
             <ul>
-                <li data-aos="fade-in" data-aos-delay="250">
-                    <a href="#sPage">Hakkımızda</a>
+                <li>
+                    <a href="#hakkımızda">Hakkımızda</a>
                 </li>
-                <li data-aos="fade-in" data-aos-delay="300">
-                    <a href="#tPage">Kahve Çeşitlerimiz</a>
+                <li>
+                    <a href="#coffeeOptions">Kahve Çeşitlerimiz</a>
                 </li>
-                <li data-aos="fade-in" data-aos-delay="350">
-                    <a href="">Şubelerimiz</a>
+                <li>
+                    <a href="#shops">Şubelerimiz</a>
                 </li>
-                <li data-aos="fade-in" data-aos-delay="400">
-                    <a href="">İletişim</a>
+                <li>
+                    <a href="#contact">İletişim</a>
                 </li>
             </ul>
         </nav>
+        <div class="menu-wrapper">
+            <div class="menu-item-bento">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
     </aside>
     <section id="slogan">
         <div class="neon-wrapper">
-            <img style="display: none" src="./images/background-wall.jpg" alt="" />
+            <img style="display: none" src="./images/background-wallM.jpg" sizes="(max-width: 590px) 50vw, 100vw"
+                srcset="./images/background-wallS.jpg 400w, ./images/background-coffeeM.jpg 1200w" alt="wall-image" />
             <div class="neon-text">
                 SİZE <br />
                 BİR KAHVE <br />KADAR<br />
@@ -44,7 +59,8 @@
         </div>
     </section>
     <section id="hakkımızda">
-        <img style="display: none;" src="./images/background-coffee.jpg" alt="">
+        <img style="display: none;" src="./images/background-coffeeM.jpg" sizes="(max-width: 590px) 50vw, 100vw"
+            srcset="./images/background-coffeeS.jpg 400w, ./images/background-coffeeM.jpg 1200w" alt="coffee-image">
         <article>
             <div class="title" data-aos="fade-in"><span>Hakkımızda</span></div>
             <div class="info" data-aos="fade-left" data-aos-delay="250">
@@ -70,7 +86,8 @@
         <div class="allCoffees-flex">
             <div class="coffee" data-aos="fade-right">
                 <div class="coffee-img-container">
-                    <img src="./images/coffee1.jpg" alt="">
+                    <img src="./images/coffee1M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/coffee1S.jpg 200w, ./images/coffee1M.jpg 350w" alt="coffee-img1">
                 </div>
                 <div class="coffee-title">SUMANTA</div>
                 <div class="coffee-description">
@@ -80,7 +97,8 @@
             </div>
             <div class="coffee" data-aos="fade-up">
                 <div class="coffee-img-container">
-                    <img src="./images/coffee2.jpg" alt="">
+                    <img src="./images/coffee2M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/coffee2S.jpg 200w, ./images/coffee2M.jpg 350w" alt="coffee-img2">
                 </div>
                 <div class="coffee-title">PERU</div>
                 <div class="coffee-description">
@@ -90,7 +108,8 @@
             </div>
             <div class="coffee" data-aos="fade-left">
                 <div class="coffee-img-container">
-                    <img src="./images/coffee3.jpg" alt="">
+                    <img src="./images/coffee3M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/coffee3S.jpg 200w, ./images/coffee3M.jpg 350w" alt="coffee-img3">
                 </div>
                 <div class="coffee-title">RAIN FOREST NUT</div>
                 <div class="coffee-description">
@@ -99,9 +118,9 @@
                 </div>
             </div>
             <div class="coffee" data-aos="fade-right">
-
                 <div class="coffee-img-container">
-                    <img src="./images/coffee5.jpg" alt="">
+                    <img src="./images/coffee4M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/coffee4S.jpg 200w, ./images/coffee4M.jpg 350w" alt="coffee-img4">
                 </div>
                 <div class="coffee-title">COSTA RICA</div>
                 <div class="coffee-description">
@@ -109,10 +128,10 @@
                     Akşam yemeği sonrası zenginlik arayanlara.
                 </div>
             </div>
-
             <div class="coffee" data-aos="fade-up">
                 <div class="coffee-img-container">
-                    <img src="./images/coffee4.jpg" alt="">
+                    <img src="./images/coffee5M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/coffee5S.jpg 200w, ./images/coffee5M.jpg 350w" alt="coffee-img5">
                 </div>
                 <div class="coffee-title">BRAZILIAN SANTOS</div>
                 <div class="coffee-description">
@@ -122,7 +141,8 @@
             </div>
             <div class="coffee" data-aos="fade-left">
                 <div class="coffee-img-container">
-                    <img src="./images/coffee6.jpg" alt="">
+                    <img src="./images/coffee6Mjpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/coffee6S.jpg 200w, ./images/coffee6M.jpg 350w" alt="coffee-img6">
                 </div>
                 <div class="coffee-title">RWANDA</div>
                 <div class="coffee-description">
@@ -133,9 +153,11 @@
 
         </div>
         <div class="allCoffees-grid">
-            <div class="coffee coffee1" data-aos="fade-right">
+            <div class="coffee1" data-aos="fade-right">
                 <div>
-                    <img style="margin-bottom: .5vh;" src="./images/coffee10.jpg" alt="">
+                    <img style="margin-bottom: .5vh;" src="./images/coffee7M.jpg"
+                        sizes="(max-width: 590px) calc(300px + 6vw), 40vw"
+                        srcset="./images/coffee7S.jpg 350w, ./images/coffee7M.jpg 800w" alt="coffee-img7">
                 </div>
                 <div class="coffee-title">GUATEMALA</div>
                 <div class="coffee-description" style="width:40vw;min-width: calc(400px + 6vw);">
@@ -144,12 +166,14 @@
                     Tamamlayıcı lezzetler: Çikolatalı cheesecake, kuruyemişli karamelli tart, mozaik pasta.
                 </div>
             </div>
-            <div class="coffee coffee2" data-aos="fade-left">
-                <img src="./images/coffee12.jpg" alt="">
+            <div class="coffee2" data-aos="fade-left">
+                <img src="./images/coffee8M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                    srcset="./images/coffee8S.jpg 200w, ./images/coffee8M.jpg 350w" alt="coffee-img8">
             </div>
-            <div class="coffee coffee3" data-aos="fade-up">
+            <div class="coffee3" data-aos="fade-up">
                 <div class="coffee-img-container">
-                    <img src="./images/coffee13.jpg" alt="">
+                    <img src="./images/coffee9M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/coffee9S.jpg 200w, ./images/coffee9M.jpg 350w" alt="coffee-img9">
                 </div>
                 <div class="coffee-title">ICE LATTE</div>
                 <div class="coffee-description">
@@ -157,9 +181,10 @@
                     Espresso, süt ve buz ile birlikte.
                 </div>
             </div>
-            <div class="coffee coffee4" data-aos="fade-up">
+            <div class="coffee4" data-aos="fade-up">
                 <div class="coffee-img-container">
-                    <img src="./images/coffee14.jpg" alt="">
+                    <img src="./images/coffee10M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/coffee10S.jpg 200w, ./images/coffee10M.jpg 350w" alt="coffee-img10">
                 </div>
                 <div class="coffee-title">ETHIOPIA SIDAMO</div>
                 <div class="coffee-description">
@@ -176,7 +201,8 @@
         <div class="shop-containers">
             <div class="shop-container" data-aos="flip-right">
                 <div class="coffee-img-container">
-                    <img src="./images/shop1.jpg" alt="">
+                    <img src="./images/shop1M.jpg" sizes="(max-width: 590px) 275px, 33.5vw"
+                        srcset="./images/shop1S.jpg 275w, ./images/shop1M.jpg 600w" alt="shop1">
                 </div>
                 <div class="shop-address">
                     Bu şubemizin toplam 20 kişi kapasitesi vardır ve maskesiz içeri girilmesi yasaktır. <br>
@@ -185,7 +211,8 @@
             </div>
             <div class="shop-container" data-aos="flip-left">
                 <div class="coffee-img-container">
-                    <img src="./images/shop3.jpg" alt="">
+                    <img src="./images/shop2M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                        srcset="./images/shop2S.jpg 275w, ./images/shop2M.jpg 600w" alt="shop2">
                 </div>
                 <div class="shop-address">
                     Bu şubemizin toplam 35 kişi kapasitesi vardır ve maskesiz içeri girilmesi yasaktır. <br>
@@ -197,29 +224,42 @@
     </section>
     <section id="contact">
         <div class="title" data-aos="fade-in"><span>İletişim</span></div>
-        <form action="" data-aos="fade-in">
-            <div class="txtb">
+        <form action="POST" data-netlify="true" data-aos="fade-in">
+            <div class="row">
                 <label>Adınız :</label>
-                <input type="text" name="" value="" placeholder="Adınızı Giriniz">
+                <input type="text" name="name" value="" placeholder="Adınızı Giriniz" required>
             </div>
-            <div class="txtb">
+            <div class="row">
                 <label>Email :</label>
-                <input type="email" name="" value="" placeholder="Mail Adresinizi Giriniz">
+                <input type="email" name="email" value="" placeholder="Mail Adresinizi Giriniz" required>
             </div>
-            <div class="txtb">
+            <div class="row">
                 <label>Telefon Numaranız :</label>
-                <input type="text" name="" value="" placeholder="Telefon Numaranızı Giriniz">
+                <input type="text" name="message" value="" placeholder="Telefon Numaranızı Giriniz" required>
             </div>
-            <div class="txtb">
+            <div class="row">
                 <label>Mesajınız :</label>
-                <textarea rows="5" placeholder="Bir Öneriniz veya Şikayetiniz Varsa Bize Buraya Giriniz"></textarea>
+                <textarea rows="5" placeholder="Mesajınızı Buraya Giriniz" name="message" required></textarea>
             </div>
             <button type="submit">Gönder</button>
         </form>
     </section>
+    <footer>
+        <h3 class="name">Can Berk &copy; 2020</h3>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/canberksanal" target="_blank" rel="noopener noreferrer"><img
+                    src=" ./icons/linkedin.svg" alt="linkedin-link" /></a>
+            <a href="https://github.com/cbsanal" target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg"
+                    alt="github-link" /></a>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
+            disable: 'tablet',
+            disable: 'mobile',
             startEvent: "load",
             delay: 200,
             duration: 600,
