@@ -45,12 +45,11 @@
                 <div class="box"></div>
             </div>
         </div>
-
     </aside>
     <section id="slogan">
         <div class="neon-wrapper">
-            <img style="display: none" src="./images/background-wallM.jpg" sizes="(max-width: 590px) 50vw, 100vw"
-                srcset="./images/background-wallS.jpg 400w, ./images/background-coffeeM.jpg 1200w" alt="wall-image" />
+            <img class="wallBg" src="./images/background-wallM.jpg" sizes="(max-width: 590px) 100vw, 80vw"
+                srcset="./images/background-wallS.jpg 400w, ./images/background-wallM.jpg 1200w" alt="wall-image" />
             <div class="neon-text">
                 SİZE <br />
                 BİR KAHVE <br />KADAR<br />
@@ -59,7 +58,7 @@
         </div>
     </section>
     <section id="hakkımızda">
-        <img style="display: none;" src="./images/background-coffeeM.jpg" sizes="(max-width: 590px) 50vw, 100vw"
+        <img class="coffeeBg" src="./images/background-coffeeM.jpg" sizes="(max-width: 590px) 100vw, 80vw"
             srcset="./images/background-coffeeS.jpg 400w, ./images/background-coffeeM.jpg 1200w" alt="coffee-image">
         <article>
             <div class="title" data-aos="fade-in"><span>Hakkımızda</span></div>
@@ -150,7 +149,6 @@
                     Tamamlayıcı Lezzetler: Ballı cevizli pasta, kuruyemişli karamelli tart.
                 </div>
             </div>
-
         </div>
         <div class="allCoffees-grid">
             <div class="coffee1" data-aos="fade-right">
@@ -197,7 +195,6 @@
     </section>
     <section id="shops">
         <div class="title" data-aos="fade-in"><span>Şubelerimiz</span></div>
-
         <div class="shop-containers">
             <div class="shop-container" data-aos="flip-right">
                 <div class="coffee-img-container">
@@ -211,7 +208,7 @@
             </div>
             <div class="shop-container" data-aos="flip-left">
                 <div class="coffee-img-container">
-                    <img src="./images/shop2M.jpg" sizes="(max-width: 590px) 150px, 17vw"
+                    <img src="./images/shop2M.jpg" sizes="(max-width: 590px) 275px, 33.5vw"
                         srcset="./images/shop2S.jpg 275w, ./images/shop2M.jpg 600w" alt="shop2">
                 </div>
                 <div class="shop-address">
@@ -225,7 +222,7 @@
     <section id="contact">
         <div class="title" data-aos="fade-in"><span>İletişim</span></div>
         <form action="POST" data-netlify="true" data-aos="fade-in">
-            <div class="row">
+            <div style="margin-top: 0;" class="row">
                 <label>Adınız :</label>
                 <input type="text" name="name" value="" placeholder="Adınızı Giriniz" required>
             </div>

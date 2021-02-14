@@ -1,17 +1,18 @@
 #contact {
-  @include flex(center, center, column);
+  min-height: auto;
+  margin-bottom: 10em;
 
   form {
     width: 85%;
     max-width: 800px;
-    padding: 1em 1.5em;
+    padding: 0 1.5em;
+    margin: 0 auto;
   }
 
   .row {
     border: 1px solid gray;
-    margin: 5vh 0;
+    margin: 5em 0;
     padding: 1em 1.5em;
-    border-radius: 8px;
   }
 
   .row label {

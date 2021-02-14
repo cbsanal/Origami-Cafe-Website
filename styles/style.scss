@@ -15,10 +15,15 @@
 
 /* Slogan Sayfası Birinci Sayfa */
 
+.wallBg,
+.coffeeBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #slogan {
-  background-image: url(../images/background-wallM.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  position: relative;
   @include flex(center, center, row);
 
   .neon-text {
@@ -38,15 +43,14 @@
 /* Hakkımızda Sayfası İkinci Sayfa */
 
 #hakkımızda {
-  background-image: url(../images/background-coffeeM.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  position: relative;
   @include flex(center, center, column);
-  padding: 0 8vw;
 
   .info {
     font-size: var(--big-text);
-    margin-bottom: 5vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3em;
   }
 }
 
@@ -164,7 +168,7 @@ footer {
         0 0 1rem red, 0 0 2rem red;
       box-shadow: 0 0 2rem #08f,
         inset 0 0 2rem #08f,
-        0 0 4rem#08f;
+        0 0 4rem #08f;
     }
   }
 
@@ -262,7 +266,6 @@ footer {
 
   /* İletişim Sayfası Düzenleme */
   #contact {
-    min-height: auto;
 
     label,
     input,
