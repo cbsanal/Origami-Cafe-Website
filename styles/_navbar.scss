@@ -43,7 +43,7 @@ aside {
       @include flex(center, center, row);
       flex-wrap: wrap;
       cursor: pointer;
-      z-index: 1;
+      z-index: 2;
     }
   }
 

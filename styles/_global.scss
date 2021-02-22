@@ -44,6 +44,10 @@ section {
     margin-left: 20vw;
 }
 
+article {
+    z-index: 1;
+}
+
 .title {
     font-size: var(--header1);
     padding: 2em;

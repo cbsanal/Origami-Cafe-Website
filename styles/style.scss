@@ -37,6 +37,7 @@
     border: 0.4rem solid white;
     border-radius: 2rem;
     animation: flicker 1.5s infinite alternate;
+    z-index: 1;
   }
 }
 
@@ -164,7 +165,7 @@ footer {
   #slogan {
     .neon-text {
       animation: none;
-      text-shadow: -0.2rem -0.2rem 1rem rgb(255, 3, 3), 0.2rem 0.2rem 1rem #fff,
+      text-shadow: -0.2rem -0.2rem 1rem red, 0.1rem 0.1rem .5rem red,
         0 0 1rem red, 0 0 2rem red;
       box-shadow: 0 0 2rem #08f,
         inset 0 0 2rem #08f,
@@ -222,7 +223,7 @@ footer {
 
   .nav-links {
     min-height: auto;
-    z-index: 1;
+    z-index: 2;
     background: black;
     width: 100vw;
     height: 95vh;

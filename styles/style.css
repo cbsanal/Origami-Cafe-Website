@@ -47,6 +47,10 @@ section {
   margin-left: 20vw;
 }
 
+article {
+  z-index: 1;
+}
+
 .title {
   font-size: var(--header1);
   padding: 2em;
@@ -130,7 +134,7 @@ aside .menu-wrapper .menu-item-bento {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 
 aside .box {
@@ -180,6 +184,7 @@ aside .box {
   border-radius: 2rem;
   -webkit-animation: flicker 1.5s infinite alternate;
           animation: flicker 1.5s infinite alternate;
+  z-index: 1;
 }
 
 /* Hakkımızda Sayfası İkinci Sayfa */
@@ -500,7 +505,7 @@ footer .social-icons img:hover {
   #slogan .neon-text {
     -webkit-animation: none;
             animation: none;
-    text-shadow: -0.2rem -0.2rem 1rem #ff0303, 0.2rem 0.2rem 1rem #fff, 0 0 1rem red, 0 0 2rem red;
+    text-shadow: -0.2rem -0.2rem 1rem red, 0.1rem 0.1rem .5rem red, 0 0 1rem red, 0 0 2rem red;
     -webkit-box-shadow: 0 0 2rem #08f, inset 0 0 2rem #08f, 0 0 4rem #08f;
             box-shadow: 0 0 2rem #08f, inset 0 0 2rem #08f, 0 0 4rem #08f;
   }
@@ -557,7 +562,7 @@ footer .social-icons img:hover {
   }
   .nav-links {
     min-height: auto;
-    z-index: 1;
+    z-index: 2;
     background: black;
     width: 100vw;
     height: 95vh;
